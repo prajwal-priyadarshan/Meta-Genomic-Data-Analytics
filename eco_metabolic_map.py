@@ -10,13 +10,13 @@ import numpy as np
 # ------------------------------------------------------------
 # Step 1 — Load Existing Network Files & Function Predictions
 # ------------------------------------------------------------
-nodes = pd.read_csv(r"D:\Desktop\Sem_3\IBS\Meta-Genomic-Data-Analytics\network_nodes.csv")     # from your network export
-edges = pd.read_csv(r"D:\Desktop\Sem_3\IBS\Meta-Genomic-Data-Analytics\network_edges.csv")     # from your network export
+nodes = pd.read_csv(r"network_nodes.csv")     # from your network export
+edges = pd.read_csv(r"network_edges.csv")     # from your network export
 
 # Optionally, bring in functional role predictions (from part B)
 # Suppose you have a file or DataFrame mapping Node -> PredictedFunction
 try:
-    func_df = pd.read_csv(r"D:\Desktop\Sem_3\IBS\Meta-Genomic-Data-Analytics\functional_predictions.csv")  # Node, PredictedFunction
+    func_df = pd.read_csv(r"functional_predictions.csv")  # Node, PredictedFunction
 except:
     # demo mapping (random for visualization)
     np.random.seed(42)
